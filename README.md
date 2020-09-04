@@ -3,6 +3,7 @@ Repositorio de diversas ideas y ejemplos de código en Java o Kotlin para Androi
 
 # Favorite Places App
 [link al video de la App!](https://vimeo.com/454766458)
+![favoriteplaces](https://firebasestorage.googleapis.com/v0/b/matiasnnr-repository.appspot.com/o/Gifs%2Ffavoriteplaces.gif?alt=media&token=31d1348c-0922-459b-8552-ea1567811123)
 # [Link al Código](https://github.com/matiasnnr/Android-Java-Kotlin/tree/master/PruebaAndroid)
 
 # Conferencias App
