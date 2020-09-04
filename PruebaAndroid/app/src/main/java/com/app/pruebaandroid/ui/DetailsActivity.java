@@ -254,8 +254,8 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                         }
 
                     } else {
-                        Toast.makeText(getApplicationContext(), "No se pudo encontrar las reviews que estás buscando",
-                                Toast.LENGTH_SHORT).show();
+                        textViewReview.setText("Reviews: aún no ha sido calificado");
+                        Toast.makeText(getApplicationContext(), "No se pudo encontrar las reviews que estás buscando", Toast.LENGTH_SHORT).show();
                     }
 
                 } else if (response.code() != 200) {

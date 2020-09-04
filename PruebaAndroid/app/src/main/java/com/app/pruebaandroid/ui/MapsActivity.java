@@ -236,10 +236,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         progressBar.setVisibility(View.GONE);
 
                     } else {
+                        progressBar.setVisibility(View.GONE);
                         Toast.makeText(getApplicationContext(), "No se pudo encontrar el lugar que estás buscando", Toast.LENGTH_SHORT).show();
                     }
 
                 } else if (response.code() != 200) {
+                    progressBar.setVisibility(View.GONE);
                     Toast.makeText(getApplicationContext(), "Error " + response.code(), Toast.LENGTH_SHORT).show();
                 }
 
