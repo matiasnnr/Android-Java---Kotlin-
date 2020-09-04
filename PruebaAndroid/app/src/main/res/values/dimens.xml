@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">35dp</dimen>
+    <dimen name="cardCornerRadius">15dp</dimen>
+    <dimen name="constraint_margin">15dp</dimen>
+    <dimen name="app_bar_height">300dp</dimen>
+
+    <dimen name="textToolbarSize">25sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

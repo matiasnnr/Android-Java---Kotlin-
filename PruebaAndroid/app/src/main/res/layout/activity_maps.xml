@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MapsActivity">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        map:uiZoomControls="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        </fragment>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="4dp"
+        android:layout_margin="15dp">
+
+        <AutoCompleteTextView
+            android:hint="@string/searchBarText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:paddingHorizontal="20dp"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:id="@+id/searchBar" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/white"
+        app:tint="@color/colorFavorite"
+        app:srcCompat="@drawable/ic_like_pink"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
